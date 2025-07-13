@@ -88,5 +88,5 @@ This web client is **fully compatible** with the official [Bitchat Android app](
 
 ## Author
 
-[![recai.furkan](https://img.shields.io/badge/GitHub-recai.furkan-181717?style=flat&logo=github)](https://github.com/recaifurkan)
+[![recaifurkan](https://img.shields.io/badge/GitHub-recaifurkan-181717?style=flat&logo=github)](https://github.com/recaifurkan)
 
