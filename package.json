@@ -1,0 +1,15 @@
+{
+  "name": "bitchat-web-ble",
+  "version": "1.0.0",
+  "description": "Bitchat Web BLE demo: Express ile HTTPS/HTTP sunucu ve Web Bluetooth arayüzü",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "selfsigned": "^2.4.1"
+  }
+} 
