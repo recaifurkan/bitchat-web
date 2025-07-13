@@ -88,8 +88,5 @@ This web client is **fully compatible** with the official [Bitchat Android app](
 
 ## Author
 
-[![recai.furkan](https://img.shields.io/badge/GitHub-recai.furkan-181717?style=flat&logo=github)](https://github.com/recai.furkan)
+[![recai.furkan](https://img.shields.io/badge/GitHub-recai.furkan-181717?style=flat&logo=github)](https://github.com/recaifurkan)
 
----
-
-> Default chat nickname is random (e.g., `web-xxxxxx`). It is not related to the author's GitHub username. 
