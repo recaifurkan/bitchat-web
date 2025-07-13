@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bitchat BLE Web Client</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    html, body { height: 100%; min-height: 100%; margin: 0; padding: 0; overflow: hidden; }
+    body { display: flex; flex-direction: column; height: 100vh; min-height: 100vh; }
+    #main-card { flex: 1 1 auto; height: 100%; max-width: 100vw !important; border-radius: 0 !important; }
+    .container-fullscreen { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; min-height: 0; padding: 0; margin: 0; }
+    #chatbox { height: 100%; min-height: 0; flex: 1 1 auto; }
+    .card-body, .card-footer { padding-left: 0.5rem; padding-right: 0.5rem; }
+    footer { position: fixed; left: 0; right: 0; bottom: 0; background: #fff; z-index: 100; box-shadow: 0 -2px 12px #0001; }
+  </style>
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient shadow-sm rounded-0">
+    <div class="container-fluid justify-content-between">
+      <span class="navbar-brand text-white fw-bold d-flex align-items-center">
+        <span class="icon me-2">💬</span>
+        <span id="appTitle" data-i18n="appTitle">Bitchat BLE Web Client</span>
+      </span>
+      <select id="langSwitcher" class="form-select form-select-sm w-auto ms-2">
+        <option value="en">English</option>
+        <option value="tr" selected>Türkçe</option>
+      </select>
+    </div>
+  </nav>
+  <div class="container-fullscreen">
+    <div id="main-card" class="card shadow-lg p-0 w-100 h-100 d-flex flex-column justify-content-between">
+      <div class="card-body pb-0 d-flex flex-column" style="flex:1 1 auto; min-height:0;">
+        <form id="nickform" class="row g-2 align-items-center mb-2">
+          <div class="col-auto">
+            <label for="nick" id="labelNick" data-i18n="labelNick" class="col-form-label">Kullanıcı adı:</label>
+          </div>
+          <div class="col">
+            <input id="nick" maxlength="20" class="form-control form-control-sm" style="width:120px;"/>
+          </div>
+          <div class="col-auto">
+            <button type="submit" id="btnChangeNick" data-i18n="btnChangeNick" class="btn btn-outline-primary btn-sm">Değiştir</button>
+          </div>
+        </form>
+        <div class="d-flex gap-2 justify-content-center align-items-center mb-2">
+          <button id="connectBtn" data-i18n="connectBtn" class="btn btn-primary px-4">Desteklenen cihaza bağlan</button>
+          <button id="disconnectBtn" style="display:none;" data-i18n="disconnectBtn" class="btn btn-danger px-4">Bağlantıyı Kes</button>
+        </div>
+        <div id="statusBar" class="mb-2"></div>
+        <div id="chatbox" class="mb-2 flex-grow-1 overflow-auto"></div>
+      </div>
+      <div class="card-footer bg-white border-0">
+        <form id="msgform" class="d-flex align-items-center gap-2">
+          <input id="msg" placeholder="Mesaj yaz..." disabled autocomplete="off" data-i18n-placeholder="msgPlaceholder" class="form-control"/>
+          <button type="submit" id="sendBtn" disabled data-i18n="sendBtn" class="btn btn-success">Gönder</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center py-2">
+    <a href="https://github.com/recai.furkan" target="_blank" rel="noopener" class="text-decoration-none text-dark fw-semibold">
+      <i class="bi bi-github" style="font-size:1.4rem; vertical-align:middle;"></i>
+      <span class="ms-1 align-middle">recai.furkan</span>
+    </a>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html> 

@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+
+# Build output
+dist/
+build/
+
+# VSCode
+.vscode/
+
+# Misc
+*.swp
+*.swo
+
+# Public output (kendi dosyalarını hariç tut)
+!/public/ 
+
+cert.pe
+m
+key.pem
