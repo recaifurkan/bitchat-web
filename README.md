@@ -40,7 +40,7 @@ This web client is **fully compatible** with the official [Bitchat Android app](
 2. **Clone the project:**
    ```sh
    git clone <repo-url>
-   cd bitchat-web/bitchat-web-ble
+   cd bitchat-web
    ```
 
 3. **Install dependencies:**
